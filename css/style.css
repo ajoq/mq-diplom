@@ -1,0 +1,133 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: OpenSans, Arial, sans-serif;
+}
+
+.header { 
+    width: 100%;
+    background-image: url(../images/football_767.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    background-position: center center;
+/*    min-height: 100vh;*/
+    height: 100vh;
+}
+
+.header::before {
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+
+.container {
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    align-items: center;    
+    box-sizing: border-box;    
+    padding-right: 20px;
+    padding-left: 20px;       
+    position: relative;    
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    width: 133px;
+    margin-top: 33px;     
+}
+
+h1.header-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;    
+    margin-top: 135px;
+    margin-bottom: 0;
+}
+
+.header-title-second {
+    display: block;
+    margin-top: 15px;
+    margin-left: 44px;
+}
+
+.header-buttons {
+    margin-top: 88px;
+}
+
+.header-buttons a {   
+    display: flex;
+    justify-content: center;   
+    width: 280px;
+    background: #5e42b0;
+    border-radius: 20px;
+    height: 35px;
+}
+
+.header-buttons a:last-child {
+    margin-top: 14px;
+}
+
+.header-buttons-item {
+    display: flex;
+    width: 110px;
+}
+
+.header-buttons-item:first-child {
+    margin-top: 3px;
+}
+
+.header-buttons-item:last-child {
+    margin-top: 6px;
+}
+
+.header-button-img {
+    fill: #fff;
+    margin-right: 8px;
+}
+
+.header-button-img-apple {
+    width: 20px;  
+}
+
+.header-button-img-google {
+    width: 22px;
+    height: 24px;
+}
+
+.header-button-text {
+    font-size: 8px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-button-text-name {
+    font-weight: bold;
+    display: block;
+}
