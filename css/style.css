@@ -17,34 +17,46 @@ body {
     font-family: OpenSans, Arial, sans-serif;
 }
 
-.header { 
-    width: 100%;
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.header {    
+    min-width: 100%;
+    position: relative;
     background-image: url(../images/football_767.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #000000;
-    background-position: center center;
-/*    min-height: 100vh;*/
-    height: 100vh;
+    background-position: 50% 0;
+    z-index: 0;
 }
 
 .header::before {
     content: "";
+    width: 100%;
+    height: 100%;
     background-color: #0a0e34;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .container {
-    width: 100%;    
+    width: 100%;
+    max-width: 1920px;
+    height: 100vh;  /*    Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;    
     align-items: center;    
+    justify-content: space-around;
     box-sizing: border-box;    
     padding-right: 20px;
     padding-left: 20px;       
@@ -59,16 +71,13 @@ a {
 
 .logo {
     width: 133px;
-    margin-top: 33px;     
 }
 
 h1.header-title {
     font-size: 28px;
     font-weight: bold;
     color: #fff;
-    text-transform: uppercase;    
-    margin-top: 135px;
-    margin-bottom: 0;
+    text-transform: uppercase;
 }
 
 .header-title-second {
@@ -78,13 +87,14 @@ h1.header-title {
 }
 
 .header-buttons {
-    margin-top: 88px;
+    width: 100%;
+    max-width: 280px;
 }
 
 .header-buttons a {   
     display: flex;
     justify-content: center;   
-    width: 280px;
+/*    width: 280px;*/
     background: #5e42b0;
     border-radius: 20px;
     height: 35px;
@@ -97,28 +107,17 @@ h1.header-title {
 .header-buttons-item {
     display: flex;
     width: 110px;
-}
-
-.header-buttons-item:first-child {
-    margin-top: 3px;
-}
-
-.header-buttons-item:last-child {
-    margin-top: 6px;
+    align-items: center;
 }
 
 .header-button-img {
-    fill: #fff;
+    display: flex;
     margin-right: 8px;
 }
 
-.header-button-img-apple {
-    width: 20px;  
-}
-
-.header-button-img-google {
-    width: 22px;
+.header-button-img svg {
     height: 24px;
+    fill: #fff;    
 }
 
 .header-button-text {
@@ -130,4 +129,168 @@ h1.header-title {
 .header-button-text-name {
     font-weight: bold;
     display: block;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+    
+    .header {
+        background-image: url(../images/football_1280.jpg);        
+    }
+    
+    .container {
+        padding-right: 58px;
+        padding-left: 58px;
+    }
+    
+    .logo {
+        width: 205px;
+    }
+    
+    h1.header-title {
+        font-size: 64px;    
+        margin-left: 32px;
+    }
+    
+    .header-title-second {
+        margin-left: 95px;
+    }
+    
+    .header-buttons {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    
+    .header-buttons a {
+        width: 310px;
+        height: 77px;
+        border-radius: 38px;
+    }
+    
+    .header-buttons a:first-child {
+        margin-right: 30px;
+    }
+    
+    .header-buttons a:last-child {
+        margin-top: 0;
+    }
+    
+    .header-buttons-item {
+        width: auto;      
+    }
+    
+    .header-button-img {
+        margin-right: 28px;
+    }
+    
+    .header-button-img svg {
+        height: 46px;   
+    }    
+    
+    .header-button-text {
+        font-size: 14px;
+    } 
+    
+    @media (orientation: landscape) {
+        .logo {
+            width: 133px;
+        }
+
+        h1.header-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .header-title-second {
+            display: block;
+            margin-top: 15px;
+            margin-left: 44px;
+        } 
+        
+        .header-buttons a {
+            height: 35px;
+            width: 280px;
+        }
+        
+        .header-button-img {
+            margin-right: 8px;
+        }
+        
+        .header-button-img svg {
+            height: 24px;
+        }
+        
+        .header-button-text {
+            font-size: 8px;
+        }
+    }    
+}
+
+@media (min-width: 961px) {
+    
+    .header {
+        background-image: url(../images/football_1920.jpg);        
+    }    
+    
+    .container {
+        padding-right: 192px;
+        padding-left: 192px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+    .logo {
+        width: 190px;
+    }    
+    
+    h1.header-title {
+        font-size: 90px;
+        letter-spacing: 4px;
+        width: 100%;
+    }
+    
+    .header-title-second {
+        margin-top: 0;
+        margin-left: 0;
+        text-align: right;
+    }
+    
+    .header-buttons {
+        display: flex;
+        justify-content: center;    
+        max-width: 100%;
+    }    
+    
+    .header-buttons a {
+        width: 310px;
+        height: 77px;
+        border-radius: 38px;
+    }
+    
+    .header-buttons a:first-child {
+        margin-right: 50px;
+    }
+    
+    .header-buttons a:last-child {
+        margin-top: 0;
+    }   
+    
+    .header-buttons-item {
+        width: auto;      
+    }
+    
+    .header-button-img {
+        margin-right: 28px;
+    }
+    
+    .header-button-img svg {
+        height: 46px;   
+    }    
+    
+    .header-button-text {
+        font-size: 14px;
+    }     
+    }
 }
