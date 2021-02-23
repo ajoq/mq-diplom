@@ -17,7 +17,7 @@ body {
     font-family: OpenSans, Arial, sans-serif;
 }
 
-h1 {
+h1, h2, h3 {
     margin: 0;
 }
 
@@ -25,6 +25,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/*HEADER start*/
+
 .header {    
     min-width: 100%;
     position: relative;
@@ -47,11 +50,9 @@ a {
     opacity: 0.9;
 }
 
-.container {
+.header-block {
     width: 100%;
-    max-width: 1920px;
-    height: 100vh;  /*    Fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);    
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;    
@@ -73,7 +74,7 @@ a {
     width: 133px;
 }
 
-h1.header-title {
+.header-title {
     font-size: 28px;
     font-weight: bold;
     color: #fff;
@@ -86,58 +87,283 @@ h1.header-title {
     margin-left: 44px;
 }
 
-.header-buttons {
+.app-buttons {
     width: 100%;
     max-width: 280px;
 }
 
-.header-buttons a {   
+.app-buttons-a {   
     display: flex;
     justify-content: center;   
-/*    width: 280px;*/
     background: #5e42b0;
     border-radius: 20px;
     height: 35px;
 }
 
-.header-buttons a:last-child {
+.app-buttons-a:last-child {
     margin-top: 14px;
 }
 
-.header-buttons-item {
+.app-buttons-item {
     display: flex;
     width: 110px;
     align-items: center;
 }
 
-.header-button-img {
+.app-button-img {
     display: flex;
     margin-right: 8px;
 }
 
-.header-button-img svg {
+.app-button-img-svg {
     height: 24px;
     fill: #fff;    
 }
 
-.header-button-text {
+.app-button-text {
     font-size: 8px;
     color: #fff;
     text-transform: uppercase;
 }
 
-.header-button-text-name {
+.app-button-text-name {
     font-weight: bold;
     display: block;
 }
 
+/*HEADER end SECT BLOCKS start*/
+
+.sect-blocks {
+    position: relative;
+    overflow: hidden;
+}
+
+.sect-blocks-title {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #e7e7e7;
+    padding: 20px;
+}
+
+.sect-blocks-img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;    
+}
+
+.sect-blocks-img-first {
+    margin-bottom: -60px;   
+    min-height: 60px;
+}
+
+.sect-blocks-img-second {
+    margin-bottom: -25px;   
+    min-height: 25px;
+}
+
+.block-list-1 {
+    background: #fafafa;
+}
+
+.block-list-2 {
+    background: #f5f4f9;
+}
+
+.block-list-3 {
+    background: #5e42b0;
+}
+
+.block-item {
+    padding: 60px 20px 55px;
+}
+
+.block-item-3-second {
+    background: #090c35; 
+}
+
+.block-item-title {
+    font-size: 23px;
+    color: #c5c5c5;
+    text-transform: uppercase;   
+    margin-bottom: 25px;    
+    display: flex;    
+}
+
+.block-item-number {
+    font-size: 14px;
+    color: #000;
+    margin-right: 10px;
+    align-self: center;
+    padding-bottom: 3px;
+}
+
+.block-item-number::after {
+    content: '';
+    display: block;
+    border-bottom: 4px solid #5e42b0;
+    border-radius: 5px;
+}
+
+.block-item-3-second .block-item-number {
+    color: #8765dd;    
+}
+
+.block-list-3 .block-item-text {
+    color: #fff;    
+}
+
+.block-list-3 .block-item-number::after {
+    border-bottom: 4px solid #fff;
+}
+
+.first-head {
+    margin-top: 20px;
+}
+
+.block-item-text {
+    font-size: 15px;
+}
+
+/*SECT BLOCKS end  PROMO BLOCKS start*/
+
+.promo-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-block-1 {
+    min-height: 351px; 
+    background: #fafafa;
+}
+
+.promo-block-img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.promo-block-square {
+    background: #5e42b0;
+    width: 70px;
+    height: 70px;
+    margin-top: -55px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-block-square-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.promo-block-square-text::after {
+    content: '';
+    display: block;
+    border-bottom: 5px solid #8f7bc8;
+    border-radius: 5px;
+}
+
+.promo-block-2-body {
+    padding: 20px 20px 80px;
+}
+
+.promo-block-title {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #e7e7e7;
+}
+.promo-block-text {
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+/* PROMO BLOCKS end  FOOTER start*/    
+
+.footer {
+    position: relative;
+    background-image: url(../images/game_767.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    background-position: 50% 0;
+    z-index: 0;
+}
+
+.footer::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.footer-block {
+    height: 100vh;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.footer-logo {
+    width: 72px;
+    height: 74px;
+    background: linear-gradient(#7553d4, #51389c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.footer-logo-svg {
+    height: 48px;
+    fill: #fff;
+}
+
+.footer-body, .footer-body-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+ 
+
+.footer-body-title {
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-body-text {
+    color: #7c73a2;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/*FOOTER end*/
+
 @media (min-width: 641px) and (max-width: 960px) {
+    
+/*    HEADER start*/
     
     .header {
         background-image: url(../images/football_1280.jpg);        
     }
     
-    .container {
+    .header-block {
         padding-right: 58px;
         padding-left: 58px;
     }
@@ -146,7 +372,7 @@ h1.header-title {
         width: 205px;
     }
     
-    h1.header-title {
+    .header-title {
         font-size: 64px;    
         margin-left: 32px;
     }
@@ -155,48 +381,176 @@ h1.header-title {
         margin-left: 95px;
     }
     
-    .header-buttons {
+    .app-buttons {
         display: flex;
         justify-content: center;
         max-width: 100%;
     }
     
-    .header-buttons a {
+    .app-buttons-a {
         width: 310px;
         height: 77px;
         border-radius: 38px;
     }
     
-    .header-buttons a:first-child {
+    .app-buttons-a:first-child {
         margin-right: 30px;
     }
     
-    .header-buttons a:last-child {
+    .app-buttons-a:last-child {
         margin-top: 0;
     }
     
-    .header-buttons-item {
+    .app-buttons-item {
         width: auto;      
     }
     
-    .header-button-img {
+    .app-button-img {
         margin-right: 28px;
     }
     
-    .header-button-img svg {
+    .app-button-img-svg {
         height: 46px;   
     }    
     
-    .header-button-text {
+    .app-button-text {
         font-size: 14px;
     } 
+    
+    
+/*  HEADER END  SECT BLOCKS start*/
+    
+    .sect-blocks-title {
+        font-size: 80px;
+        padding: 60px 33px 0 292px;
+    }
+    
+    .sect-blocks-img-first {
+        position: absolute;    
+        margin: -70px 0 0 -160px;
+    }
+    
+    .block-item {
+        padding: 30px 33px 35px 292px;
+    }
+    
+    .block-list-1 {
+        background: #fff;
+    }
+    
+    .block-item-title {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    .first-head {
+        margin-top: 0;
+    }
+    
+    .block-item-text {
+        display: block;
+        max-width: 400px; 
+        font-size: 16px;
+        line-height: 1.75;
+    }    
+    
+    .block-item-number {
+        font-size: 18px;
+    }
+    
+    .block-item-number::after {
+        border-bottom: 7px solid #5e42b0;
+    }
+    
+    .sect-blocks-title-second {
+        padding: 60px 20px 0 28px;
+    }
+   
+    .sect-blocks-img-second {
+        position: absolute;
+        margin-top: -130px;
+        right: 0;
+    }
+    
+    .players {
+        padding: 30px 33px 35px 33px;
+    }   
+    
+/*SECT BLOCKS end  PROMO BLOCKS start*/
+    
+    .promo-block-1 {
+        background: #fafafa;
+    }
+    
+    .promo-block-square {
+        width: 117px;
+        height: 117px;
+        margin-left: 33px;
+        margin-top: -85px;
+    }
+    
+    .promo-block-square-text {
+        font-size: 24px;
+    }
+    
+    .promo-block-square-text::after {
+        border-bottom: 7px solid #8f7bc8;
+    }
+    
+    .promo-block-2-body {
+        padding: 50px 33px 100px;
+    }
+    
+    .promo-block-title {
+        font-size: 88px;
+        margin-bottom: 30px;
+        margin-left: -5px;
+    }
+    
+    .promo-block-text {
+        font-size: 24px;
+        line-height: 1.167;
+    }
+    
+/* PROMO BLOCKS end  FOOTER start*/ 
+    
+    .footer {
+        background-image: url(../images/game_1280.jpg);
+    }
+    
+    .footer-block {
+        padding-right: 33px;
+        padding-left: 33px;
+    }
+    
+    .footer-logo {
+        width: 130px;
+        height: 137px;
+        border-radius: 30px;
+        margin-bottom: 75px;
+        margin-bottom: 0;
+    }
+    
+    .footer-logo-svg {
+        height: 86px;
+    }
+    
+    .footer-body-title {
+        font-size: 80px;
+    }
+    
+    .footer-body-text {
+        font-size: 36px;
+    }
+    
+/*    FOOTER end*/
     
     @media (orientation: landscape) {
         .logo {
             width: 133px;
         }
 
-        h1.header-title {
+        .header-title {
             font-size: 28px;
             font-weight: bold;
             color: #fff;
@@ -209,32 +563,62 @@ h1.header-title {
             margin-left: 44px;
         } 
         
-        .header-buttons a {
+        .app-buttons-a {
             height: 35px;
             width: 280px;
         }
         
-        .header-button-img {
+        .app-button-img {
             margin-right: 8px;
         }
         
-        .header-button-img svg {
+        .app-button-img-svg {
             height: 24px;
         }
         
-        .header-button-text {
+        .app-button-text {
             font-size: 8px;
+        }
+        .promo-block-square {
+            margin-top: 0;
+        }  
+        
+        .footer-block {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        
+        .footer-logo {
+            width: 72px;
+            height: 74px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        
+        .footer-logo-svg {
+            height: 48px;
+        }
+        
+        .footer-body-title {
+            font-size: 32px;
+        }
+        
+        .footer-body-text {
+            font-size: 14px;
         }
     }    
 }
 
 @media (min-width: 961px) {
     
+    /*    HEADER start*/
+    
     .header {
         background-image: url(../images/football_1920.jpg);        
     }    
     
-    .container {
+    .header-block {
+        max-width: 1920px;
         padding-right: 192px;
         padding-left: 192px;
         margin-left: auto;
@@ -245,9 +629,8 @@ h1.header-title {
         width: 190px;
     }    
     
-    h1.header-title {
+    .header-title {
         font-size: 90px;
-/*        letter-spacing: 4px;*/
         width: 100%;
     }
     
@@ -257,40 +640,230 @@ h1.header-title {
         text-align: right;
     }
     
-    .header-buttons {
+    .app-buttons {
         display: flex;
         justify-content: center;    
         max-width: 100%;
     }    
     
-    .header-buttons a {
+    .app-buttons-a {
         width: 310px;
         height: 77px;
         border-radius: 38px;
     }
     
-    .header-buttons a:first-child {
+    .app-buttons-a:first-child {
         margin-right: 50px;
     }
     
-    .header-buttons a:last-child {
+    .app-buttons-a:last-child {
         margin-top: 0;
     }   
     
-    .header-buttons-item {
+    .app-buttons-item {
         width: auto;      
     }
     
-    .header-button-img {
+    .app-button-img {
         margin-right: 28px;
     }
     
-    .header-button-img svg {
+    .app-button-img-svg {
         height: 46px;   
     }    
     
-    .header-button-text {
+    .app-button-text {
         font-size: 14px;
     }     
+/*  HEADER END SECT BLOCKS start*/
+    
+    .main {
+        width: 100%;
     }
+    
+    .content-block {
+        width: 100%;
+        max-width: 1920px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .sect-blocks-title {
+        font-size: 88px;
+        padding: 95px 190px 0 calc(50% + 48px);        
+    }
+    
+    .sect-blocks-img-first {
+        position: absolute;    
+        left: 0;
+        right: 0;
+        margin-top: -160px;
+        margin-right: 50%;
+    }
+    
+    .block-list-1 {
+        background: #fff;
+    }
+    
+    .block-item {
+        padding: 60px 190px 60px calc(50% + 48px);
+        max-width: 715px
+    }
+    
+    .block-item-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    
+    .first-head {
+        margin-top: 20px;
+    }
+    
+    .block-item-text {
+        font-size: 20px;
+        line-height: 1.4;  
+        max-width: 750px;
+    }    
+    
+    .block-item-number {
+        font-size: 18px;
+    }
+    
+    .block-item-number::after {
+        border-bottom: 7px solid #5e42b0;
+    }
+    
+    .sect-blocks-title-second {
+         padding: 60px 190px 0;
+    }
+    
+    .sect-blocks-img-second {
+        position: absolute;
+        margin-top: -180px;
+        left: 0;
+        right: 0;
+        margin-left: calc(50% - 148px);
+    }
+    
+    .players {
+        padding: 60px 200px;
+    }  
+    
+/*SECT BLOCKS end  PROMO BLOCKS start*/
+    
+    .promo-block {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .promo-block:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .promo-block-1 {
+        background: #fafafa;
+    }    
+    
+    .promo-block-1, .promo-block-2 {
+        width: 50%;
+    }
+    
+    .promo-block-2-body {
+        padding: inherit;
+        max-width: 630px;
+        height: 100%;
+        padding-left: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .promo-block-title {
+        font-size: 80px;
+        margin-bottom: 70px;
+        line-height: 1;
+    }
+    .promo-block-text {
+        font-size: 24px;
+        line-height: 1.167;
+    }
+    
+    .promo-block:nth-child(even) .promo-block-2 {
+        display: flex;
+        justify-content: flex-end;      
+    }
+    
+    .promo-block:nth-child(even) .promo-block-2-body {
+        padding-left: 192px;
+        padding-right: 130px;
+    }    
+    
+    .promo-block-square {
+        position: absolute;
+        width: 157px;
+        height: 157px;
+        align-self: center;
+        margin-top: -130px;
+        margin-left: 0;
+    }
+    .promo-block-square-text {
+        font-size: 24px;
+    }
+    
+    .promo-block-square-text::after {
+        border-bottom: 7px solid #8f7bc8;
+    }   
+    
+/* PROMO BLOCKS end  FOOTER start*/ 
+    
+    .footer {
+        background-image: url(../images/game_1920.jpg);
+    }
+    
+    .footer-block {
+        max-width: 1920px;
+        padding-right: 192px;
+        padding-left: 192px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-evenly;
+    }
+    
+    .footer-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+        align-items: center;
+    }
+    
+    .footer-logo {
+        width: 130px;
+        height: 137px;
+        border-radius: 30px;
+        margin-right: 35px;
+        margin-bottom: 0;
+    }
+    
+    .footer-logo-svg {
+        height: 86px;
+    }
+    
+    .footer-body-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    .footer-body-title {
+        font-size: 80px;
+    }
+    
+    .footer-body-text {
+        font-size: 30px;
+    }
+    
+/*    FOOTER end*/    
+    
 }

@@ -1,40 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Surface</title>
-    <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+	<meta charset="UTF-8">
+	<title>Surface</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--    <script src="script.js"></script>-->
 </head>
 <body>
-    <header class="header">
-       <div class="container">
-            <a href="" class="a-logo"><img src="svg/surface_logo_text.svg" alt="Surface" class="logo"></a>
-            <h1 class="header-title">Be recruited <span class="header-title-second">Play college sports</span></h1>
-            <div class="header-buttons">
-                <a href="#">
-                    <div class="header-buttons-item">
-                        <div class="header-button-img">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
-                              <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.5 3.24-12.742 3.35-4.93.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.03-7.08-9.168-15.29-12.41-24.65-3.47-10.11-5.21-19.9-5.21-29.378 0-10.857 2.346-20.22 7.045-28.068C27.508 57.03 32.42 52.06 38.57 48.41s12.793-5.51 19.948-5.63c3.915 0 9.05 1.21 15.43 3.59 6.36 2.39 10.446 3.6 12.237 3.6 1.34 0 5.877-1.416 13.57-4.24 7.275-2.617 13.415-3.7 18.445-3.274 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.385-18.22 17.73-18.1 31 .11 10.338 3.86 18.94 11.23 25.77 3.34 3.17 7.07 5.62 11.22 7.36-.9 2.61-1.85 5.11-2.86 7.51zM119.11 7.24c0 8.102-2.96 15.667-8.86 22.67-7.12 8.323-15.732 13.133-25.07 12.374-.12-.972-.19-1.995-.19-3.07 0-7.778 3.387-16.102 9.4-22.908 3.002-3.446 6.82-6.31 11.45-8.597 4.62-2.253 8.99-3.498 13.1-3.71.12 1.082.17 2.165.17 3.24z"/>
-                            </svg>                        
-                        </div>
-                        <div class="header-button-text">Download on the <span class="header-button-text-name">App Store</span></div>
-                    </div>
-                </a>  
-                <a href="#">
-                  <div class="header-buttons-item"> 
-                       <div class="header-button-img">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.499 505.499">
-                              <path d="M471.497 234.466l-92.082-53.135-75.733 73.208 69.215 66.907 98.6-56.91c5.43-3.133 8.677-8.756 8.677-15.03 0-6.275-3.245-11.898-8.677-15.04zM363.785 172.3l-101.332-58.497L40.375 0l250.828 242.47M44.063 505.5l218.77-120.512 94.435-54.515-66.065-63.87M25.56 9.815l-.236 489.67L278.72 254.534"/>
-                            </svg>
-                        </div>                         
-                        <div class="header-button-text">Get it on <span class="header-button-text-name">Google Play</span></div>                   
-                    </div>                   
-                </a>
+	<header class="header">
+		<div class="header-block">
+			<a href="#" class="a-logo"><img src="svg/surface_logo_text.svg" alt="Surface" class="logo"></a>
+			<h1 class="header-title">Be recruited <span class="header-title-second">Play college sports</span></h1>
+			<div class="app-buttons">
+				<a href="#" class="app-buttons-a">
+					<div class="app-buttons-item">
+						<div class="app-button-img">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" class="app-button-img-svg">
+								<path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.5 3.24-12.742 3.35-4.93.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.03-7.08-9.168-15.29-12.41-24.65-3.47-10.11-5.21-19.9-5.21-29.378 0-10.857 2.346-20.22 7.045-28.068C27.508 57.03 32.42 52.06 38.57 48.41s12.793-5.51 19.948-5.63c3.915 0 9.05 1.21 15.43 3.59 6.36 2.39 10.446 3.6 12.237 3.6 1.34 0 5.877-1.416 13.57-4.24 7.275-2.617 13.415-3.7 18.445-3.274 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.385-18.22 17.73-18.1 31 .11 10.338 3.86 18.94 11.23 25.77 3.34 3.17 7.07 5.62 11.22 7.36-.9 2.61-1.85 5.11-2.86 7.51zM119.11 7.24c0 8.102-2.96 15.667-8.86 22.67-7.12 8.323-15.732 13.133-25.07 12.374-.12-.972-.19-1.995-.19-3.07 0-7.778 3.387-16.102 9.4-22.908 3.002-3.446 6.82-6.31 11.45-8.597 4.62-2.253 8.99-3.498 13.1-3.71.12 1.082.17 2.165.17 3.24z" /> </svg>
+						</div>
+						<div class="app-button-text">Download on the <span class="app-button-text-name">App Store</span></div>
+					</div>
+				</a>
+				<a href="#" class="app-buttons-a">
+					<div class="app-buttons-item">
+						<div class="app-button-img">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.499 505.499" class="app-button-img-svg">
+								<path d="M471.497 234.466l-92.082-53.135-75.733 73.208 69.215 66.907 98.6-56.91c5.43-3.133 8.677-8.756 8.677-15.03 0-6.275-3.245-11.898-8.677-15.04zM363.785 172.3l-101.332-58.497L40.375 0l250.828 242.47M44.063 505.5l218.77-120.512 94.435-54.515-66.065-63.87M25.56 9.815l-.236 489.67L278.72 254.534" /> </svg>
+						</div>
+						<div class="app-button-text">Get it on <span class="app-button-text-name">Google Play</span></div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<article class="sect-blocks">
+			<div class="content-block">
+				<h2 class="sect-blocks-title">Athlets</h2>
+			</div>
+            <picture>
+                <source media="(max-width: 640px)" srcset="images/footballer_192.png">
+                <source media="(min-width: 641px) and (max-width: 960px)" srcset="images/footballer_497.png">
+                <source media="(min-width: 961px)" srcset="images/footballer_566.png">
+                <img class="sect-blocks-img sect-blocks-img-first" src="images/footballer_566.png" alt="Athlets">
+            </picture>			
+			<div class="block-list-1">
+                <div class="content-block">
+                    <div class="block-item">
+                        <h3 class="block-item-title first-head"><span class="block-item-number">01</span> Connection</h3>
+                        <span class="block-item-text">Connect with coaches directly, you can ping coaches to view profile.</span>
+                    </div>                    
+                </div>
+			</div>
+			<div class="block-list-2">
+                <div class="content-block">
+                    <div class="block-item">
+                        <h3 class="block-item-title"><span class="block-item-number">02</span> Collaboration</h3>
+                        <span class="block-item-text">Work with other student athletes to increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</span>
+                    </div>                    
+                </div>
+			</div>
+			<div class="block-list-3">
+                <div class="content-block">
+                    <div class="block-item">
+                        <h3 class="block-item-title"><span class="block-item-number">03</span> Growth</h3>
+                        <span class="block-item-text">Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc</span>
+                    </div>                    
+                </div>
+			</div>
+		</article>
+		<article class="sect-blocks">
+			<div class="content-block">
+				<h2 class="sect-blocks-title sect-blocks-title-second">Players</h2>
+			</div>
+            <picture>
+                <source media="(max-width: 640px)" srcset="images/basketballer_302.png">
+                <source media="(min-width: 641px) and (max-width: 960px)" srcset="images/basketballer_436.png">
+                <source media="(min-width: 961px)" srcset="images/basketballer_991.png">
+                <img class="sect-blocks-img sect-blocks-img-second" src="images/basketballer_991.png" alt="Players">
+            </picture>			
+			<div class="block-list-1">
+				<div class="content-block">
+					<div class="block-item players">
+						<h3 class="block-item-title first-head"><span class="block-item-number">01</span> Connection</h3>
+						<span class="block-item-text">Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</span>
+				    </div>
+				</div>
+			</div>
+			<div class="block-list-2">
+				<div class="content-block">
+					<div class="block-item players">
+						<h3 class="block-item-title"><span class="block-item-number">02</span> Collaboration</h3>
+						<span class="block-item-text">Work with recruiter to increase your chances of findingtalented athlete.</span>
+				    </div>
+				</div>
+			</div>
+			<div class="block-list-3 block-item-3-second">
+				<div class="content-block">
+					<div class="block-item players ">
+						<h3 class="block-item-title"><span class="block-item-number">03</span> Growth</h3>
+						<span class="block-item-text">Save your time, recruit proper athlets for your team. </span>
+				    </div>
+				</div>
+			</div>
+		</article>
+		<section class="promo-block">
+		    <div class="promo-block-1">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/be-active_640.jpg">
+                    <source media="(max-width: 960px)" srcset="images/be-active_960.jpg">
+                    <source media="(min-width: 961px)" srcset="images/be-active_1024.jpg">
+                    <img class="promo-block-img" src="images/be-active.jpg" alt="Be active">
+                </picture>   		            		        
+		    </div>
+            <div class="promo-block-square">
+                <span class="promo-block-square-text">01</span>
+            </div>		    
+		    <div class="promo-block-2">
+                <div class="promo-block-2-body">
+                    <h2 class="promo-block-title">Be active</h2>
+                    <span class="promo-block-text">Post videos with your skills, Like and follow others to be  more popular.</span>                    
+                </div>
+		    </div>		    
+		</section>	
+		<section class="promo-block">
+		    <div class="promo-block-1">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/find-contact_640.jpg">
+                    <source media="(max-width: 960px)" srcset="images/find-contact_960.jpg">
+                    <source media="(min-width: 961px)" srcset="images/find-contact_1024.jpg">
+                    <img class="promo-block-img" src="images/find-contact.jpg" alt="Find contact">
+                </picture>  		            	        
+		    </div>
+            <div class="promo-block-square">
+                <span class="promo-block-square-text">02</span>
+            </div>		    
+		    <div class="promo-block-2">
+                <div class="promo-block-2-body">
+		            <h2 class="promo-block-title">Find contact</h2>
+		            <span class="promo-block-text">Contact others to find right coach or athlete you are looking for.</span>                   
+                </div>
+		    </div>			    
+		</section>			
+		<section class="promo-block">
+		    <div class="promo-block-1">
+                <picture>
+                    <source media="(max-width: 640px)" srcset="images/work-it_640.jpg">
+                    <source media="(max-width: 960px)" srcset="images/work-it_960.jpg">
+                    <source media="(min-width: 961px)" srcset="images/work-it_1024.jpg">
+                    <img class="promo-block-img" src="images/work-it.jpg" alt="Find contact">
+                </picture> 		            	        
+		    </div>
+           <div class="promo-block-square">
+                <span class="promo-block-square-text">03</span>
+            </div>		    
+		    <div class="promo-block-2">
+                <div class="promo-block-2-body">
+		            <h2 class="promo-block-title">Work it</h2>
+		            <span class="promo-block-text">Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</span>               
+                </div>
+		    </div>			    
+		</section>				
+	</main>
+	<footer class="footer">
+        <div class="footer-block">  
+            <div class="footer-body">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 288 264" xmlns="http://www.w3.org/2000/svg" class="footer-logo-svg">
+                      <g fill-rule="evenodd">
+                        <path d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z" fill-rule="nonzero"/>
+                        <path d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"/>
+                      </g>
+                    </svg>
+                </div>
+                <div class="footer-body-content">
+                    <span class="footer-body-title">Download app</span>
+                    <span class="footer-body-text">Show everyone what you can do!</span>                       
+                </div>                            
             </div>
+			<div class="app-buttons">
+				<a href="#" class="app-buttons-a">
+					<div class="app-buttons-item">
+						<div class="app-button-img">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" class="app-button-img-svg">
+								<path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.5 3.24-12.742 3.35-4.93.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.03-7.08-9.168-15.29-12.41-24.65-3.47-10.11-5.21-19.9-5.21-29.378 0-10.857 2.346-20.22 7.045-28.068C27.508 57.03 32.42 52.06 38.57 48.41s12.793-5.51 19.948-5.63c3.915 0 9.05 1.21 15.43 3.59 6.36 2.39 10.446 3.6 12.237 3.6 1.34 0 5.877-1.416 13.57-4.24 7.275-2.617 13.415-3.7 18.445-3.274 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.385-18.22 17.73-18.1 31 .11 10.338 3.86 18.94 11.23 25.77 3.34 3.17 7.07 5.62 11.22 7.36-.9 2.61-1.85 5.11-2.86 7.51zM119.11 7.24c0 8.102-2.96 15.667-8.86 22.67-7.12 8.323-15.732 13.133-25.07 12.374-.12-.972-.19-1.995-.19-3.07 0-7.778 3.387-16.102 9.4-22.908 3.002-3.446 6.82-6.31 11.45-8.597 4.62-2.253 8.99-3.498 13.1-3.71.12 1.082.17 2.165.17 3.24z" /> </svg>
+						</div>
+						<div class="app-button-text">Download on the <span class="app-button-text-name">App Store</span></div>
+					</div>
+				</a>
+				<a href="#" class="app-buttons-a">
+					<div class="app-buttons-item">
+						<div class="app-button-img">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.499 505.499" class="app-button-img-svg">
+								<path d="M471.497 234.466l-92.082-53.135-75.733 73.208 69.215 66.907 98.6-56.91c5.43-3.133 8.677-8.756 8.677-15.03 0-6.275-3.245-11.898-8.677-15.04zM363.785 172.3l-101.332-58.497L40.375 0l250.828 242.47M44.063 505.5l218.77-120.512 94.435-54.515-66.065-63.87M25.56 9.815l-.236 489.67L278.72 254.534" /> </svg>
+						</div>
+						<div class="app-button-text">Get it on <span class="app-button-text-name">Google Play</span></div>
+					</div>
+				</a>
+			</div>  
+            <a href="#" class="a-logo"><img src="svg/surface_logo_text.svg" alt="Surface" class="logo"></a>                      
         </div>
-    </header>
+	</footer>
 </body>
 </html>
