@@ -92,7 +92,7 @@ a {
     max-width: 280px;
 }
 
-.app-buttons-a {   
+.app-buttons-anchor {   
     display: flex;
     justify-content: center;   
     background: #5e42b0;
@@ -100,7 +100,7 @@ a {
     height: 35px;
 }
 
-.app-buttons-a:last-child {
+.app-buttons-anchor:last-child {
     margin-top: 14px;
 }
 
@@ -151,34 +151,34 @@ a {
     margin-left: auto;    
 }
 
-.sect-blocks-img-first {
+.sect-blocks-img-football {
     margin-bottom: -60px;   
     min-height: 60px;
 }
 
-.sect-blocks-img-second {
+.sect-blocks-img-backetball {
     margin-bottom: -25px;   
     min-height: 25px;
 }
 
-.block-list-1 {
+.block-list:first-child {
     background: #fafafa;
 }
 
-.block-list-2 {
+.block-list:nth-child(2) {
     background: #f5f4f9;
 }
 
-.block-list-3 {
+.block-list:last-child {
     background: #5e42b0;
+}
+
+.block-list-dark {
+    background: #090c35; 
 }
 
 .block-item {
     padding: 60px 20px 55px;
-}
-
-.block-item-3-second {
-    background: #090c35; 
 }
 
 .block-item-title {
@@ -204,19 +204,19 @@ a {
     border-radius: 5px;
 }
 
-.block-item-3-second .block-item-number {
+.number-dark {
     color: #8765dd;    
 }
 
-.block-list-3 .block-item-text {
+.text-white {
     color: #fff;    
 }
 
-.block-list-3 .block-item-number::after {
+.block-list:last-child .block-item-number::after, .block-list-dark .block-item-number::after {
     border-bottom: 4px solid #fff;
 }
 
-.first-head {
+.connection {
     margin-top: 20px;
 }
 
@@ -226,12 +226,12 @@ a {
 
 /*SECT BLOCKS end  PROMO BLOCKS start*/
 
-.promo-block {
+.promo-blocks {
     display: flex;
     flex-direction: column;
 }
 
-.promo-block-1 {
+.promo-block-image {
     min-height: 351px; 
     background: #fafafa;
 }
@@ -266,7 +266,7 @@ a {
     border-radius: 5px;
 }
 
-.promo-block-2-body {
+.promo-block-content-body {
     padding: 20px 20px 80px;
 }
 
@@ -387,17 +387,17 @@ a {
         max-width: 100%;
     }
     
-    .app-buttons-a {
+    .app-buttons-anchor {
         width: 310px;
         height: 77px;
         border-radius: 38px;
     }
     
-    .app-buttons-a:first-child {
+    .app-buttons-anchor:first-child {
         margin-right: 30px;
     }
     
-    .app-buttons-a:last-child {
+    .app-buttons-anchor:last-child {
         margin-top: 0;
     }
     
@@ -425,7 +425,7 @@ a {
         padding: 60px 33px 0 292px;
     }
     
-    .sect-blocks-img-first {
+    .sect-blocks-img-football {
         position: absolute;    
         margin: -70px 0 0 -160px;
     }
@@ -434,7 +434,7 @@ a {
         padding: 30px 33px 35px 292px;
     }
     
-    .block-list-1 {
+    .block-list:first-child {
         background: #fff;
     }
     
@@ -443,7 +443,7 @@ a {
         margin-bottom: 15px;
     }
     
-    .first-head {
+    .connection {
         margin-top: 0;
     }
     
@@ -462,11 +462,11 @@ a {
         border-bottom: 7px solid #5e42b0;
     }
     
-    .sect-blocks-title-second {
+    .sect-blocks-title-players {
         padding: 60px 20px 0 28px;
     }
    
-    .sect-blocks-img-second {
+    .sect-blocks-img-backetball {
         position: absolute;
         margin-top: -130px;
         right: 0;
@@ -478,7 +478,7 @@ a {
     
 /*SECT BLOCKS end  PROMO BLOCKS start*/
     
-    .promo-block-1 {
+    .promo-block-image {
         background: #fafafa;
     }
     
@@ -497,7 +497,7 @@ a {
         border-bottom: 7px solid #8f7bc8;
     }
     
-    .promo-block-2-body {
+    .promo-block-content-body {
         padding: 50px 33px 100px;
     }
     
@@ -563,7 +563,7 @@ a {
             margin-left: 44px;
         } 
         
-        .app-buttons-a {
+        .app-buttons-anchor {
             height: 35px;
             width: 280px;
         }
@@ -646,17 +646,17 @@ a {
         max-width: 100%;
     }    
     
-    .app-buttons-a {
+    .app-buttons-anchor {
         width: 310px;
         height: 77px;
         border-radius: 38px;
     }
     
-    .app-buttons-a:first-child {
+    .app-buttons-anchor:first-child {
         margin-right: 50px;
     }
     
-    .app-buttons-a:last-child {
+    .app-buttons-anchor:last-child {
         margin-top: 0;
     }   
     
@@ -693,7 +693,7 @@ a {
         padding: 95px 190px 0 calc(50% + 48px);        
     }
     
-    .sect-blocks-img-first {
+    .sect-blocks-img-football {
         position: absolute;    
         left: 0;
         right: 0;
@@ -701,7 +701,7 @@ a {
         margin-right: 50%;
     }
     
-    .block-list-1 {
+    .block-list:first-child {
         background: #fff;
     }
     
@@ -713,10 +713,6 @@ a {
     .block-item-title {
         font-size: 36px;
         margin-bottom: 15px;
-    }
-    
-    .first-head {
-        margin-top: 20px;
     }
     
     .block-item-text {
@@ -733,11 +729,11 @@ a {
         border-bottom: 7px solid #5e42b0;
     }
     
-    .sect-blocks-title-second {
+    .sect-blocks-title-players {
          padding: 60px 190px 0;
     }
     
-    .sect-blocks-img-second {
+    .sect-blocks-img-backetball {
         position: absolute;
         margin-top: -180px;
         left: 0;
@@ -751,24 +747,25 @@ a {
     
 /*SECT BLOCKS end  PROMO BLOCKS start*/
     
-    .promo-block {
+    .promo-blocks {
         flex-direction: row;
         justify-content: center;
+        position: relative;
     }
     
-    .promo-block:nth-child(even) {
+    .promo-blocks:nth-child(even) {
         flex-direction: row-reverse;
     }
     
-    .promo-block-1 {
+    .promo-block-image {
         background: #fafafa;
     }    
     
-    .promo-block-1, .promo-block-2 {
+    .promo-block-image, .promo-block-content {
         width: 50%;
     }
     
-    .promo-block-2-body {
+    .promo-block-content-body {
         padding: inherit;
         max-width: 630px;
         height: 100%;
@@ -789,23 +786,24 @@ a {
         line-height: 1.167;
     }
     
-    .promo-block:nth-child(even) .promo-block-2 {
+    .promo-block:nth-child(even) .promo-block-content {
         display: flex;
         justify-content: flex-end;      
     }
     
-    .promo-block:nth-child(even) .promo-block-2-body {
+    .promo-block:nth-child(even) .promo-block-content-body {
         padding-left: 192px;
         padding-right: 130px;
     }    
     
     .promo-block-square {
         position: absolute;
-        width: 157px;
-        height: 157px;
+        width: 168px;
+        height: 155px;
         align-self: center;
-        margin-top: -130px;
+/*        margin-top: -130px;*/
         margin-left: 0;
+        top: 38%;
     }
     .promo-block-square-text {
         font-size: 24px;
@@ -838,7 +836,7 @@ a {
     }
     
     .footer-logo {
-        width: 130px;
+        min-width: 130px;
         height: 137px;
         border-radius: 30px;
         margin-right: 35px;
